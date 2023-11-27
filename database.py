@@ -4,10 +4,10 @@ from lxml import etree
 class Database:
     def __init__(self):
         self.host = 'localhost'
-        self.port = '5432'
-        self.user = 'postgres'
-        self.password = 'root'
-        self.database = 'webservices'
+        self.port = '****'
+        self.user = '****'
+        self.password = '****'
+        self.database = '****'
 
     def get_connection(self):
         try:
