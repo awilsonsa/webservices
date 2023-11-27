@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE disciplinas SYSTEM "disciplinas.dtd">
+<disciplinas>
+    <disciplina>
+        <id>1</id>
+        <codigo>STB0302</codigo>
+        <nome>Inglês Instrumental</nome>
+        <carga>60</carga>
+        <ementa>Conscientização do processo de leitura...</ementa>
+        <semestre>1</semestre>
+     
+    </disciplina>
+    <disciplina>
+        <id>2</id>
+        <codigo>STB0303</codigo>
+        <nome>Introdução à Computação</nome>
+        <carga>30</carga>
+        <ementa>Evolução da computação (tecnologias e usos)...</ementa>
+        <semestre>1</semestre>
+       
+    </disciplina>
+</disciplinas>

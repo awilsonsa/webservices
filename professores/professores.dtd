@@ -1,0 +1,6 @@
+<!ELEMENT professores (professor+)>
+<!ELEMENT professor (id, nome, email)>
+
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT email (#PCDATA)>

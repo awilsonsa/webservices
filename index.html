@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualização de Cursos</title>
+</head>
+<body>
+    <h1>Visualização de Cursos</h1>
+
+    <div id="cursosContent">
+        <h2>Cursos XML</h2>
+        <div id="xmlCursosContent"></div>
+    </div>
+
+    <div id="disciplinasContent">
+        <h2>Disciplinas XML</h2>
+        <div id="xmlDisciplinasContent"></div>
+    </div>
+
+    <div id="professoresContent">
+        <h2>Professores XML</h2>
+        <div id="xmlProfessoresContent"></div>
+    </div>
+
+    <script>
+        function loadXML(url, targetId) {
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    displayXML(this.responseText, targetId);
+                }
+            };
+
+            xhttp.open("GET", url, true);
+            xhttp.send();
+        }
+
+        function displayXML(xmlString, targetId) {
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(xmlString, "text/xml");
+
+            var xmlFormatted = new XMLSerializer().serializeToString(xmlDoc);
+
+            document.getElementById(targetId).innerHTML = "<pre>" + xmlFormatted + "</pre>";
+        }
+
+        window.onload = function() {
+            loadXML("cursos.xml", "xmlCursosContent");
+            loadXML("disciplinas.xml", "xmlDisciplinasContent");
+            loadXML("professores.xml", "xmlProfessoresContent");
+        };
+    </script>
+</body>
+</html>

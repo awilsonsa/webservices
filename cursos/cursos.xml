@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cursos SYSTEM "cursos.dtd">
+<cursos>
+    <curso>
+        <id>1</id>
+        <nome>Sistemas para Internet</nome>
+        <semestres>6</semestres>
+        <id_coordenador>Rafael Speroni</id_coordenador>
+    </curso>
+    <curso>
+        <id>2</id>
+        <nome>Sistemas da Informação</nome>
+        <semestres>8</semestres>
+        <id_coordenador>Daniel Anderle</id_coordenador>
+    </curso>
+</cursos>

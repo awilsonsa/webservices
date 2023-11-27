@@ -1,0 +1,6 @@
+<!ELEMENT cursos (curso+)>
+<!ELEMENT curso (id, nome, semestres, id_coordenador)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nome (#PCDATA)>
+<!ELEMENT semestres (#PCDATA)>
+<!ELEMENT id_coordenador (#PCDATA)>

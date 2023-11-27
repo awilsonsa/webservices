@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE professores SYSTEM "professores.dtd">
+<professores>
+    <professor>
+        <id>1</id>
+        <nome>André Moraes</nome>
+        <email>a****s@ifc.edu.br</email>
+    </professor>
+    <professor>
+        <id>2</id>
+        <nome>Ângelo Frozza</nome>
+        <email>a****a@ifc.edu.br</email>
+    </professor>
+</professores>
